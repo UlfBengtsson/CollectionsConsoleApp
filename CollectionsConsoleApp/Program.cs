@@ -62,7 +62,7 @@ namespace CollectionsConsoleApp
                 {
                     Console.WriteLine("must enter something.");
                 }
-                catch (FormatException exceptionVarible)
+                catch (FormatException)
                 {
                     Console.WriteLine("was unable to read your number.");
                 }
@@ -72,7 +72,6 @@ namespace CollectionsConsoleApp
                 }
 
             } while (wasNotNumber);
-
 
             return number;
         }
